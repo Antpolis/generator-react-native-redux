@@ -22,7 +22,6 @@ module.exports = generator.Base.extend({
       this.template('gitignore', '.gitignore');
       this.template('eslintrc', '.eslintrc');
       this.template('_package.json', 'package.json');
-      this.template('LICENSE.md');
       this.template('README.md');
       this.template('babelrc', '.babelrc');
       this.template('index.android.js');

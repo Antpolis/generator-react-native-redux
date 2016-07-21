@@ -30,7 +30,6 @@ describe('generator', function () {
       '.babelrc',
       'package.json',
       'README.md',
-      'LICENSE.md',
       'index.ios.js',
       'index.android.js',
 
