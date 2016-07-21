@@ -1,6 +1,6 @@
 {
   "name": "generator-fu-rnb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaffold out a react-native app",
   "scripts": {
     "lint": "eslint app/index.js test.js",
