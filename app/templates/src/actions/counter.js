@@ -1,12 +1,12 @@
 export function increment() {
   return {
-    type: 'increment'
+    type: 'increment',
   };
 }
 
 export function decrement() {
   return {
-    type: 'decrement'
+    type: 'decrement',
   };
 }
 

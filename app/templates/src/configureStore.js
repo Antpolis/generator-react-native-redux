@@ -21,8 +21,8 @@ if (__DEV__) {
       reduxRemoteDevTools({
         name: Platform.OS,
         host: 'localhost',
-        port: 5678
-      }),
+        port: 5678,
+      })
   );
 } else {
   enhancer = applyMiddleware(...middlewares);

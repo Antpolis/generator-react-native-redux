@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  }
+  },
 });
 
 export default class Counter extends Component {
@@ -16,7 +16,7 @@ export default class Counter extends Component {
     incrementIfOdd: PropTypes.func.isRequired,
     incrementAsync: PropTypes.func.isRequired,
     decrement: PropTypes.func.isRequired,
-    counter: PropTypes.instanceOf(Immutable.Map).isRequired
+    counter: PropTypes.instanceOf(Immutable.Map).isRequired,
   };
 
   constructor(props) {

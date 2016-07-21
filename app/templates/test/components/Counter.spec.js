@@ -11,7 +11,7 @@ const props = {
   increment: sinon.spy(),
   decrement: sinon.spy(),
   incrementIfOdd: sinon.spy(),
-  incrementAsync: sinon.spy()
+  incrementAsync: sinon.spy(),
 };
 
 describe('components <Counter />', function () {

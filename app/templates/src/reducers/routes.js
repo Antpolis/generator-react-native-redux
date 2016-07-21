@@ -17,7 +17,7 @@ const actionsMap = {
   },
   pop(state/*, action*/) {
     return state.index > 0 ? StateUtils.pop(state) : state;
-  }
+  },
 };
 
 export default (state = initialState, action) => {

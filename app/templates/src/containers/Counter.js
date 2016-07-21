@@ -16,18 +16,18 @@ const styles = StyleSheet.create({
   back: {
     margin: 10,
     fontSize: 20,
-  }
+  },
 });
 
 @connect(
   state => ({
-    counter: state.counter
+    counter: state.counter,
   }),
   dispatch => bindActionCreators(CounterActions, dispatch)
 )
 export default class CounterContainer extends Component {
   static propTypes = {
-    navigate: PropTypes.func.isRequired
+    navigate: PropTypes.func.isRequired,
   };
 
   handleBack = () => {

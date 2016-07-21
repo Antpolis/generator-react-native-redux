@@ -8,7 +8,7 @@ const actionsMap = {
   },
   decrement(state/*, action*/) {
     return state.update('counter', n => n - 1);
-  }
+  },
 };
 
 export default (state = initialState, action) => {

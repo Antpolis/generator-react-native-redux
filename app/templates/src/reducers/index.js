@@ -4,5 +4,5 @@ import routes from './routes';
 
 export default combineReducers({
   counter,
-  routes
+  routes,
 });

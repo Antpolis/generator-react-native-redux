@@ -3,7 +3,7 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -27,14 +27,14 @@ const styles = StyleSheet.create({
 
 export default class Home extends Component {
   static propTypes = {
-    navigate: PropTypes.func.isRequired
+    navigate: PropTypes.func.isRequired,
   };
 
   toCounter = () => {
     const { navigate } = this.props;
     navigate({
       type: 'push',
-      key: 'counter'
+      key: 'counter',
     });
   }
 

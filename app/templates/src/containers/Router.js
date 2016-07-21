@@ -14,7 +14,7 @@ const { CardStack } = NavigationExperimental;
 export default class Root extends Component {
   static propTypes = {
     routes: PropTypes.object.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   handleNavigation = action => {
