@@ -3,7 +3,7 @@ const helpers = require('yeoman-test');
 const assert = require('yeoman-assert');
 const pwd = path.resolve('./');
 
-describe('generator', function () {
+describe('generator', function spec() {
   this.timeout(60000);
 
   beforeEach(cb => {

@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb-base",
+  "extends": "./node_modules/mybigday-test-utils/eslint-base.js",
   "env": {
     "mocha": true,
     "node": true

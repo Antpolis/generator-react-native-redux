@@ -10,10 +10,7 @@
     "app"
   ],
   "devDependencies": {
-    "eslint": "^2.7.0",
-    "eslint-config-airbnb-base": "^3.0.1",
-    "eslint-plugin-import": "^1.8.0",
-    "mocha": "^2.4.5"
+    "mybigday-test-utils": "git+ssh://git@github.com/mybigday/mybigday-test-utils.git"
   },
   "dependencies": {
     "rimraf": "^2.5.2",

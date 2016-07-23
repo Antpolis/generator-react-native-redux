@@ -3,7 +3,7 @@ const _s = require('underscore.string');
 const rimraf = require('rimraf');
 
 module.exports = generator.Base.extend({
-  init: function () {
+  init() {
     const cb = this.async();
 
     this.prompt([{
@@ -59,14 +59,14 @@ module.exports = generator.Base.extend({
       cb();
     });
   },
-  end: function () {
+  end() {
     const cb = this.async();
     rimraf(
       this.destinationPath('android/app/src/main/java/com/rnboilerplate'),
       cb
     );
   },
-  install: function () {
+  install() {
     this.installDependencies({ bower: false });
   },
 });
