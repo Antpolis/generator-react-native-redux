@@ -32,7 +32,7 @@
     "mybigday-test-utils": "git+ssh://git@github.com/mybigday/mybigday-test-utils.git#0.1.1",
     "react-dom": "~15.2.1",
     "react-native-debugger-open": "^0.3.0",
-    "remote-redux-devtools": "^0.3.1",
+    "remote-redux-devtools": "^0.3.4",
     "remote-redux-devtools-on-debugger": "^0.5.1"
   },
   "devEngines": {
