@@ -1,10 +1,11 @@
 {
   "name": "@fugood/generator-fu-rnb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Scaffold out a react-native app",
   "scripts": {
     "lint": "eslint app/index.js test.js",
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "npm run lint && npm test"
   },
   "files": [
     "app"
