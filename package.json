@@ -16,5 +16,8 @@
     "rimraf": "^2.5.2",
     "underscore.string": "^3.0.3",
     "yeoman-generator": "^0.23.3"
-  }
+  },
+  "author": "Jhen <developer@jhen.me>",
+  "homepage": "https://github.com/mybigday/generator-fu-rnb",
+  "repository": "https://github.com/mybigday/generator-fu-rnb"
 }
