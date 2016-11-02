@@ -4,7 +4,7 @@
   "description": "Scaffold out a react-native app",
   "scripts": {
     "lint": "eslint app/index.js test.js",
-    "test": "mocha",
+    "test": "NODE_ENV=test mocha",
     "prepublish": "npm run lint && npm test"
   },
   "files": [
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "rimraf": "^2.5.2",
+    "semver": "^5.3.0",
     "underscore.string": "^3.0.3",
     "yeoman-generator": "^0.23.3"
   },

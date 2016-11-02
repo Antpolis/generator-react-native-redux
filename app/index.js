@@ -1,10 +1,42 @@
+const execSync = require('child_process').execSync;
+const semver = require('semver');
 const generator = require('yeoman-generator');
 const _s = require('underscore.string');
 const rimraf = require('rimraf');
 
+function getYarnVersionIfAvailable() {
+  let yarnVersion;
+  try {
+    // execSync returns a Buffer -> convert to string
+    if (process.platform.startsWith('win')) {
+      yarnVersion = (execSync('yarn --version').toString() || '').trim();
+    } else {
+      yarnVersion = (execSync('yarn --version 2>/dev/null').toString() || '').trim();
+    }
+  } catch (error) {
+    return null;
+  }
+  // yarn < 0.16 has a 'missing manifest' bug
+  try {
+    if (semver.gte(yarnVersion, '0.16.0')) {
+      return yarnVersion;
+    }
+    return null;
+  } catch (error) {
+    console.error('Cannot parse yarn version: ' + yarnVersion);
+    return null;
+  }
+}
+
 module.exports = generator.Base.extend({
   init() {
     const cb = this.async();
+
+    this.option('npm', {
+      desc: 'Use the npm client, even if yarn is available.',
+      type: Boolean,
+      defaults: false,
+    });
 
     this.prompt([{
       name: 'appName',
@@ -67,6 +99,12 @@ module.exports = generator.Base.extend({
     );
   },
   install() {
-    this.installDependencies({ bower: false });
+    const yarnVersion = (!this.options.npm) && getYarnVersionIfAvailable();
+
+    if (yarnVersion && process.env.NODE_ENV !== 'test') {
+      execSync('yarn');
+    } else {
+      this.installDependencies({ bower: false });
+    }
   },
 });

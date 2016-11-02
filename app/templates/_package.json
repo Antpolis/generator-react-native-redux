@@ -9,7 +9,7 @@
     "test": "mocha --recursive --compilers js:babel-core/register -r mybigday-test-utils/react-native",
     "cover": "nyc npm test",
     "remotedev": "remotedev-debugger --injectserver",
-    "postinstall": "npm run link && npm run remotedev && rndebugger-open"
+    "postinstall": "yarn-bin-fix && npm run link && npm run remotedev && rndebugger-open"
   },
   "remotedev": {
     "hostname": "localhost",
@@ -33,7 +33,8 @@
     "react-dom": "15.3.2",
     "react-native-debugger-open": "^0.3.0",
     "remote-redux-devtools": "^0.4.1",
-    "remote-redux-devtools-on-debugger": "^0.5.1"
+    "remote-redux-devtools-on-debugger": "^0.5.1",
+    "yarn-bin-fix": "^0.1.15"
   },
   "devEngines": {
     "node": ">= 6.x"
