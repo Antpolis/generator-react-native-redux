@@ -58,6 +58,7 @@ module.exports = generator.Base.extend({
       this.template('babelrc', '.babelrc');
       this.template('index.android.js');
       this.template('index.ios.js');
+      this.template('yarn.lock');
 
       this.directory('src', 'src');
       this.directory('test', 'test');
