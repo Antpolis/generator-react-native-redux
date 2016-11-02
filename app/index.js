@@ -1,4 +1,4 @@
-const execSync = require('child_process').execSync;
+const { spawnSync, execSync } = require('child_process');
 const semver = require('semver');
 const generator = require('yeoman-generator');
 const _s = require('underscore.string');
@@ -8,7 +8,7 @@ function getYarnVersionIfAvailable() {
   let yarnVersion;
   try {
     // execSync returns a Buffer -> convert to string
-    if (process.platform.startsWith('win')) {
+    if (process.platform === 'win32') {
       yarnVersion = (execSync('yarn --version').toString() || '').trim();
     } else {
       yarnVersion = (execSync('yarn --version 2>/dev/null').toString() || '').trim();
@@ -99,10 +99,10 @@ module.exports = generator.Base.extend({
     );
   },
   install() {
-    const yarnVersion = (!this.options.npm) && getYarnVersionIfAvailable();
+    const yarnVersion = !this.options.npm && getYarnVersionIfAvailable();
 
     if (yarnVersion && process.env.NODE_ENV !== 'test') {
-      execSync('yarn');
+      spawnSync('yarn', { shell: true, stdio: 'inherit' });
     } else {
       this.installDependencies({ bower: false });
     }
