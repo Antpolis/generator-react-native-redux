@@ -30,7 +30,7 @@
     "babel-preset-react-native": "^1.4.0",
     "immutable-devtools": "0.0.7",
     "mybigday-test-utils": "git+ssh://git@github.com/mybigday/mybigday-test-utils.git#0.1.4",
-    "react-dom": "15.3.2",
+    "react-dom": "15.3.1",
     "react-native-debugger-open": "^0.3.0",
     "remote-redux-devtools": "^0.4.1",
     "remote-redux-devtools-on-debugger": "^0.5.1",
