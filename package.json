@@ -1,6 +1,6 @@
 {
   "name": "@fugood/generator-fu-rnb",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Scaffold out a react-native app",
   "scripts": {
     "prelint": "yarn-bin-fix",
