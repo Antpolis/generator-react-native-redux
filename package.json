@@ -1,17 +1,19 @@
 {
   "name": "@fugood/generator-fu-rnb",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Scaffold out a react-native app",
   "scripts": {
     "lint": "eslint app/index.js test.js",
     "test": "NODE_ENV=test mocha",
-    "prepublish": "npm run lint && npm test"
+    "prepublish": "npm run lint && npm test",
+    "postinstall": "yarn-bin-fix"
   },
   "files": [
     "app"
   ],
   "devDependencies": {
-    "mybigday-test-utils": "git+ssh://git@github.com/mybigday/mybigday-test-utils.git"
+    "mybigday-test-utils": "git+ssh://git@github.com/mybigday/mybigday-test-utils.git",
+    "yarn-bin-fix": "^0.1.15"
   },
   "dependencies": {
     "rimraf": "^2.5.2",
