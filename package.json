@@ -3,10 +3,11 @@
   "version": "0.3.1",
   "description": "Scaffold out a react-native app",
   "scripts": {
+    "prelint": "yarn-bin-fix",
     "lint": "eslint app/index.js test.js",
+    "pretest": "yarn-bin-fix",
     "test": "NODE_ENV=test mocha",
-    "prepublish": "npm run lint && npm test",
-    "postinstall": "yarn-bin-fix"
+    "prepublish": "npm run lint && npm test"
   },
   "files": [
     "app"
