@@ -1,12 +1,10 @@
 {
   "name": "@fugood/generator-fu-rnb",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Scaffold out a react-native app",
   "scripts": {
-    "prelint": "yarn-bin-fix",
-    "lint": "eslint app/index.js test.js",
-    "pretest": "yarn-bin-fix",
-    "test": "NODE_ENV=test mocha",
+    "lint": "yarn-bin-fix && eslint app/index.js test.js",
+    "test": "yarn-bin-fix && NODE_ENV=test mocha",
     "prepublish": "npm run lint && npm test"
   },
   "files": [
