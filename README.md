@@ -1,12 +1,12 @@
 # generator-fu-rnb
 
-A [Yeoman](http://yeoman.io) generator for scaffold out a react-native app
+A [Yeoman](http://yeoman.io) generator for scaffolding clean React Native + Redux app.
 
 ## Installation
 
 ```bash
 $ npm install -g yo
-$ npm install -g @fugood/generator-fu-rnb
+$ npm install -g generator-react-native-redux
 ```
 
 __*Note:*__ requires a node@^6.
@@ -14,5 +14,5 @@ __*Note:*__ requires a node@^6.
 ## Usage
 
 ```bash
-$ mkdir <app-name> && cd <app-name> && yo @fugood/fu-rnb
+$ mkdir <app-name> && cd <app-name> && yo react-native-redux
 ```
