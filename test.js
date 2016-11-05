@@ -11,7 +11,7 @@ describe('generator', function spec() {
 
     helpers.testDirectory(path.join(__dirname, 'temp'), err => {
       if (err) return cb(err);
-      this.generator = helpers.createGenerator('rnr:app', deps, null, { skipInstall: true });
+      this.generator = helpers.createGenerator('react-native-redux:app', deps, null, { skipInstall: true });
       cb();
     });
   });
