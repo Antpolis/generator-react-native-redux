@@ -1,5 +1,5 @@
 {
-  "name": "@fugood/generator-fu-rnb",
+  "name": "generator-rnr",
   "version": "0.3.4",
   "description": "Scaffold out a react-native app",
   "scripts": {
