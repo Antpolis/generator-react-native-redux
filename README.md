@@ -1,4 +1,4 @@
-# generator-fu-rnb
+# generator-react-native-redux
 
 A [Yeoman](http://yeoman.io) generator for scaffolding clean React Native + Redux app.
 
