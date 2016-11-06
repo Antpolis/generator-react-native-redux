@@ -1,6 +1,6 @@
 {
   "name": "generator-react-native-redux",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Scaffold out a react-native app",
   "scripts": {
     "lint": "yarn-bin-fix && eslint app/index.js test.js",
